@@ -1,24 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
-    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
-    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
-    <PackageReference Include="Microsoft.Extensions.ML" Version="$(MicrosoftMLPreviewVersion)" />
+    <PackageReference Include="Microsoft.Extensions.ML" Version="1.5.2" />
   </ItemGroup>
 
 
   <ItemGroup>
     <ProjectReference Include="..\SentimentRazorML.Model\SentimentRazorML.Model.csproj" />
   </ItemGroup>
-
-  <PropertyGroup>
-    <UseShortFileNames>True</UseShortFileNames>
-  </PropertyGroup>
-
 </Project>
